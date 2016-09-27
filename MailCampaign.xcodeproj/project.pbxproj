@@ -12,6 +12,14 @@
 		566084DA1D9AC00000F93165 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566084D91D9AC00000F93165 /* Document.swift */; };
 		566084DC1D9AC00000F93165 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566084DB1D9AC00000F93165 /* Assets.xcassets */; };
 		566084DF1D9AC00000F93165 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566084DD1D9AC00000F93165 /* Main.storyboard */; };
+		566084E81D9AD7F200F93165 /* MCComposerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566084E71D9AD7F200F93165 /* MCComposerViewController.swift */; };
+		566084EA1D9AD80700F93165 /* MCPreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566084E91D9AD80700F93165 /* MCPreviewViewController.swift */; };
+		566084EC1D9AD91700F93165 /* MCComposerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566084EB1D9AD91700F93165 /* MCComposerDelegate.swift */; };
+		566084EE1D9AD98A00F93165 /* MCComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566084ED1D9AD98A00F93165 /* MCComposer.swift */; };
+		566084F51D9ADF1900F93165 /* MCCampaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566084F41D9ADF1900F93165 /* MCCampaign.swift */; };
+		566084F71D9AE02500F93165 /* MCCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566084F61D9AE02500F93165 /* MCCode.swift */; };
+		566084FA1D9AE27200F93165 /* MCMainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566084F91D9AE27200F93165 /* MCMainWindowController.swift */; };
+		566084FD1D9AF15200F93165 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566084FC1D9AF15200F93165 /* Security.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,15 @@
 		566084DB1D9AC00000F93165 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		566084DE1D9AC00000F93165 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		566084E01D9AC00000F93165 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566084E71D9AD7F200F93165 /* MCComposerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCComposerViewController.swift; sourceTree = "<group>"; };
+		566084E91D9AD80700F93165 /* MCPreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCPreviewViewController.swift; sourceTree = "<group>"; };
+		566084EB1D9AD91700F93165 /* MCComposerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCComposerDelegate.swift; sourceTree = "<group>"; };
+		566084ED1D9AD98A00F93165 /* MCComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCComposer.swift; sourceTree = "<group>"; };
+		566084F41D9ADF1900F93165 /* MCCampaign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCCampaign.swift; sourceTree = "<group>"; };
+		566084F61D9AE02500F93165 /* MCCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCCode.swift; sourceTree = "<group>"; };
+		566084F91D9AE27200F93165 /* MCMainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MCMainWindowController.swift; sourceTree = "<group>"; };
+		566084FC1D9AF15200F93165 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		566084FE1D9AF16300F93165 /* libMailCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMailCore.a; path = "../../../Downloads/mailcore2-osx-12/lib/libMailCore.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566084FD1D9AF15200F93165 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +58,7 @@
 			children = (
 				566084D41D9AC00000F93165 /* MailCampaign */,
 				566084D31D9AC00000F93165 /* Products */,
+				566084FB1D9AF15200F93165 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +73,62 @@
 		566084D41D9AC00000F93165 /* MailCampaign */ = {
 			isa = PBXGroup;
 			children = (
+				566084F61D9AE02500F93165 /* MCCode.swift */,
+				566084F01D9ADB3F00F93165 /* Campaign */,
+				566084E61D9AD7B500F93165 /* View Controller */,
+				566084F81D9AE25A00F93165 /* Window Controller */,
 				566084D51D9AC00000F93165 /* AppDelegate.swift */,
 				566084D71D9AC00000F93165 /* ViewController.swift */,
 				566084D91D9AC00000F93165 /* Document.swift */,
 				566084DB1D9AC00000F93165 /* Assets.xcassets */,
 				566084DD1D9AC00000F93165 /* Main.storyboard */,
 				566084E01D9AC00000F93165 /* Info.plist */,
+				566084EB1D9AD91700F93165 /* MCComposerDelegate.swift */,
 			);
 			path = MailCampaign;
+			sourceTree = "<group>";
+		};
+		566084E61D9AD7B500F93165 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				566084E71D9AD7F200F93165 /* MCComposerViewController.swift */,
+				566084E91D9AD80700F93165 /* MCPreviewViewController.swift */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		566084EF1D9AD99C00F93165 /* Composer */ = {
+			isa = PBXGroup;
+			children = (
+				566084ED1D9AD98A00F93165 /* MCComposer.swift */,
+			);
+			name = Composer;
+			sourceTree = "<group>";
+		};
+		566084F01D9ADB3F00F93165 /* Campaign */ = {
+			isa = PBXGroup;
+			children = (
+				566084F41D9ADF1900F93165 /* MCCampaign.swift */,
+				566084EF1D9AD99C00F93165 /* Composer */,
+			);
+			name = Campaign;
+			sourceTree = "<group>";
+		};
+		566084F81D9AE25A00F93165 /* Window Controller */ = {
+			isa = PBXGroup;
+			children = (
+				566084F91D9AE27200F93165 /* MCMainWindowController.swift */,
+			);
+			name = "Window Controller";
+			sourceTree = "<group>";
+		};
+		566084FB1D9AF15200F93165 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				566084FE1D9AF16300F93165 /* libMailCore.a */,
+				566084FC1D9AF15200F93165 /* Security.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +203,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566084E81D9AD7F200F93165 /* MCComposerViewController.swift in Sources */,
 				566084D81D9AC00000F93165 /* ViewController.swift in Sources */,
+				566084FA1D9AE27200F93165 /* MCMainWindowController.swift in Sources */,
 				566084D61D9AC00000F93165 /* AppDelegate.swift in Sources */,
+				566084F71D9AE02500F93165 /* MCCode.swift in Sources */,
+				566084F51D9ADF1900F93165 /* MCCampaign.swift in Sources */,
+				566084EA1D9AD80700F93165 /* MCPreviewViewController.swift in Sources */,
+				566084EC1D9AD91700F93165 /* MCComposerDelegate.swift in Sources */,
 				566084DA1D9AC00000F93165 /* Document.swift in Sources */,
+				566084EE1D9AD98A00F93165 /* MCComposer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +328,7 @@
 				DEVELOPMENT_TEAM = 7FZ4M9P9UW;
 				INFOPLIST_FILE = MailCampaign/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = bastianwirth.MailCampaign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -268,6 +343,7 @@
 				DEVELOPMENT_TEAM = 7FZ4M9P9UW;
 				INFOPLIST_FILE = MailCampaign/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = bastianwirth.MailCampaign;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
